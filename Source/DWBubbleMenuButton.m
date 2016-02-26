@@ -495,6 +495,12 @@
 #pragma mark -
 #pragma mark Lifecycle
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    _originFrame = self.frame;
+}
+
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     
